@@ -1,0 +1,12 @@
+{
+  "name": "Windows Environment",
+  "runArgs": ["--device=/dev/net/tun"],
+  "containerEnv": {
+    "CAP_NET_ADMIN": "true"
+  },
+  "features": {
+    "ghcr.io/tailscale/codespace/tailscale:1": {
+      "authKey": "${localEnv:KEY}"
+    }
+  }
+}
