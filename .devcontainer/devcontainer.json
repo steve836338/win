@@ -1,6 +1,6 @@
 {
   "name": "Windows Environment",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu"
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "runArgs": ["--device=/dev/net/tun"],
   "containerEnv": {
     "CAP_NET_ADMIN": "true"
